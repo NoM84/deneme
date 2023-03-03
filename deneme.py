@@ -25,7 +25,7 @@ if islem == '0':
         }
     }
 msg= "Dene: "
-token = "NzE4NDk3Mjg4OTYzNjIwOTA0.GYIOsV.3XmgtlXhDpBBTqzNUvvh9Ydxl4gVv-PwNTaUcI"
+token = input("Tokeni Giriniz: ")
 times = int(input('Tekrarlanacak işlem sayısını giriniz: '))
 
 b = 1
