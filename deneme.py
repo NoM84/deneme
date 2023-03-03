@@ -26,13 +26,13 @@ if islem == '0':
     }
 msg= "Dene: "
 token = input("Tokeni Giriniz: ")
-times = int(input('Tekrarlanacak işlem sayısını giriniz: '))
+times = int(input('Tekrarlanacak işlem sayisini giriniz: '))
 
 b = 1
 for i in range(times):
     response = send_message(kanal_id, token,(msg + f'{i}'))
     now = datetime.now()
     current_time = now.strftime('%H:%M:%S')
-    print('Yapılan işlem sayısı: {}  Saat: {}'.format(b, current_time))
+    print('Yapilan işlem sayisi: {}  Saat: {}'.format(b, current_time))
     b += 1
     time.sleep(30)
