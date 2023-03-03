@@ -6,7 +6,7 @@ from datetime import datetime
 islem = input("payload i giriniz: ")
 kanal_id= input("Kanal id' sini girin:")
 if (islem == "0"):
-	payload ={"type":2,
+	payload1 ={"type":2,
 		"application_id":"624187616312426512",
 		"guild_id":"787718450206343218",
 		"channel_id":kanal_id,
@@ -16,6 +16,9 @@ if (islem == "0"):
     	"id":"1042350843103547441",
     	"name":"hunt",
     		}}
+mesaj = {
+	'content': "Deneme "
+}
 #Burada benim kullanacağım komutun kodu var kullanacağınız koda göre değiştirmelisiniz
 token = input("Auth tokeni giriniz:")
 header = {
@@ -24,9 +27,9 @@ header = {
 times=int(input("Tekrarlanacak islem sayisini giriniz:"))
 b=1
 for i in range(times):
-	r = requests.post("https://discord.com/api/v9/interactions", json=payload, headers=header)
+	r= requests.post("https://discord.com/api/v9/channels/{kanal_id}/messages",data=mesaj,headers=header)
 	time.sleep(5)
-	r = requests.post("https://discord.com/api/v9/interactions", json=payload, headers=header)
+	
 	now =datetime.now()
 	current_time = now.strftime("%H:%M:%S")
 	print("yapilan islem sayisi : {}   Saat : ".format(b),current_time)
