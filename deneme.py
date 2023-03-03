@@ -35,4 +35,4 @@ for i in range(times):
     current_time = now.strftime('%H:%M:%S')
     print('Yapılan işlem sayısı: {}  Saat: {}'.format(b, current_time))
     b += 1
-    time.sleep(10)
+    time.sleep(30)
