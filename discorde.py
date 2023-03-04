@@ -22,10 +22,10 @@ payload1 = {
         'application_id': '624187616312426512',
         'guild_id': '787718450206343218',
         'channel_id': kanal_id,
-        'session_id': 'bcbaa31b6538beb56f5a08f304832a2e',
+        'session_id': 'f6da8c3425baac8ce0ce609d6b8943cc',
         'data': {
-            'version': '1074395882000224347',
-            'id': '1074395881547239477',
+            'version': '1081513164425932870',
+            'id': '1081513164115542127',
             'name': 'hunt',
         }
     }
@@ -38,6 +38,8 @@ for i in range(times):
     response=send_intreact(token,payload1)
     time.sleep(15)
     response=send_intreact(token,payload1)
+    time.sleep(5)
+    send_message(kanal_id,token,("Komut Gönderildi:"+"b"))
     now = datetime.now()
     current_time = now.strftime('%H:%M:%S')
     print('Yapilan işlem sayisi: {}  Saat: {}'.format(b, current_time))
