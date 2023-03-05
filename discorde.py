@@ -30,16 +30,34 @@ payload1 = {
         }
     }
 msg= "Dene: "
-token = input("Tokeni Giriniz: ")
+token1 = input("ilk Tokeni Giriniz: ")
+token2 = input("ikinci Tokeni Giriniz: ")
+token3 = input("üçüncü Tokeni Giriniz: ")
+token4 = input("dördüncü Tokeni Giriniz: ")
 times = int(input('Tekrarlanacak işlem sayisini giriniz: '))
 
 b = 1
 for i in range(times):
-    response=send_intreact(token,payload1)
+    response=send_intreact(token1,payload1)
     time.sleep(15)
-    response=send_intreact(token,payload1)
+    response=send_intreact(token1,payload1)
     time.sleep(5)
-    send_message(kanal_id,token,("Komut Gönderildi:"+"b"))
+    send_message(kanal_id,token1,("Komut Gönderildi:"+"b"))
+    response=send_intreact(token2,payload1)
+    time.sleep(15)
+    response=send_intreact(token2,payload1)
+    time.sleep(5)
+    send_message(kanal_id,token2,("Komut Gönderildi:"+"b"))
+    response=send_intreact(token3,payload1)
+    time.sleep(15)
+    response=send_intreact(token3,payload1)
+    time.sleep(5)
+    send_message(kanal_id,token3,("Komut Gönderildi:"+"b"))
+    response=send_intreact(token4,payload1)
+    time.sleep(15)
+    response=send_intreact(token4,payload1)
+    time.sleep(5)
+    send_message(kanal_id,token4,("Komut Gönderildi:"+"b"))
     now = datetime.now()
     current_time = now.strftime('%H:%M:%S')
     print('Yapilan işlem sayisi: {}  Saat: {}'.format(b, current_time))
