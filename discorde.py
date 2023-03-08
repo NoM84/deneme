@@ -22,7 +22,7 @@ payload1 = {
         'application_id': '624187616312426512',
         'guild_id': '787718450206343218',
         'channel_id': kanal_id,
-        'session_id': 'f6da8c3425baac8ce0ce609d6b8943cc',
+        'session_id': 'e7e15d901cf9c4f06d1a4fee9581d417',
         'data': {
             'version': '1081513164425932870',
             'id': '1081513164115542127',
