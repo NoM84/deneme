@@ -191,5 +191,13 @@ while True:
         time.sleep(2)
         silme_komutu_yolla(kanalid,Token4)
         continue
+    
+
+
+
+
+    if komut is not None:
+        komut=None
+        continue
         
 
